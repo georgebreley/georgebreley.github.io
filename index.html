@@ -1,10 +1,28 @@
 <html>
   <head>
     <title>George J. Breley</title>
+    <style>
+      .profile-pic-wrapper {
+        width: 200px; /* Desired size */
+        height: 200px; /* Same as width to maintain square */
+        border-radius: 50%;
+        overflow: hidden; /* Hide overflowed parts */
+        display: inline-block; /* Align with the text */
+        vertical-align: top; /* Align top with the text */
+      }
+      .profile-pic-wrapper img {
+        width: 100%; /* Fill the wrapper */
+        height: 100%;
+        object-fit: cover; /* Ensures image covers the area */
+        object-position: center; /* Center the image */
+      }
+    </style>
   </head>
   <body>
-    <img src="profile.jpg" alt="Profile Picture" style="width:200px; height:200px; border-radius:50%;">
-    <h1>George J. Breley</h1> 
+    <div class="profile-pic-wrapper">
+      <img src="profile.jpg" alt="Profile Picture">
+    </div>
+    <h1>George J. Breley</h1>
     <p>Words and pictures of people and places.</p>
   </body>
 </html>
